@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+     
+      <a-scene id="scene" shadow="type: pcfsoft" sound="src: #howlsound; on: click; loop: true; volume: 0.5; rolloffFactor: 0; poolSize: 1; positional: false">
+  
+  <a-assets>
+    <audio id="howlsound" src="https://cdn.glitch.global/72c43521-18bc-411a-865f-c8a87d9eecb9/04%20heartbeat.mp3?v=1664551783501" preload="true" crossorigin="anonymous"></audio>
+    
+   
+  </a-assets>
+      <a-entity environment="preset: forest;lightPosition:1 5 -2; skyType: color; skyColor:#05093C; dressingColor:#EA1DEE; groundTexture:none; groundColor:blue"></a-entity>
+      <a-entity rotation="2 4 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 7000">
+ 
+      <a-ocean color="#92E2E2" width="250" depth="250" density="150" speed="2; opacity: 0.2"></a-ocean>
+        <a-sphere radius="2.5"
+            position="-1 9 -15"
+            color="lightgrey"
+            emissive="lightgrey"></a-sphere>
+  <a-light type="point"
+           position="4 9 -15"
+           color="grey"
+           intensity="4"
+           distance="50"
+           ></a-light>
+    <a-sphere position="-5.5 6.5 -13 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-6.2 7.4 -12.9 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-7 7.7 -12.4 " radius="1" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-7 6.7 -12.2 " radius=".95" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-5.9 6.6 -12.5 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-7.9 6.6 -12.5 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-7 6.9 -12.6 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-8.3 6.5 -12.8 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-8.2 7.2 -13 " radius="1" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-6 7.5 -12.8 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+
+    <a-sphere position="-11.5 9 -14 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-12.2 9.9 -13.9 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-13 10.2 -13.4 " radius="1" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-13 9.2 -13.2 " radius=".95" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-11.9 9.1 -13.5 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-13.9 9.1 -13.5 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-13 9.4 -13.6 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-14.3 9.4 -13.8 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-14.2 9.7 -14 " radius="1" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="-12 10 -13.8 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+   
+    <a-sphere position="6.5 6.5 -13 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="5.8 7.4 -12.9 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="5 7.7 -12.4 " radius="1" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="5 6.7 -12.2 " radius=".95" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="6.1 6.6 -12.5 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="4.1 6.6 -12.5 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="5 6.9 -12.6 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="3.7 6.5 -12.8 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="3.8 7.2 -13 " radius="1" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="6 7.5 -12.8 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+
+    <a-sphere position="12.5 9 -14 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="11.8 9.9 -13.9 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="11 10.2 -13.4 " radius="1" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="11 9.2 -13.2 " radius=".95" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="12.1 9.1 -13.5 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="10.1 9.1 -13.5 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="11 9.4 -13.6 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="9.7 9.4 -13.8 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="9.8 9.7 -14 " radius="1" color="#505050" emissive="#A0A0A0"></a-sphere>
+    <a-sphere position="12 10 -13.8 " radius=".9" color="#505050" emissive="#A0A0A0"></a-sphere>
+  </a-entity>
+       
+  
+    </a-scene>
+  </body>
+</html>
